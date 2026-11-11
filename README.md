@@ -12,6 +12,8 @@ A fictional record label wants to know which markets deserve a closer look and w
 
 ## Power BI dashboard
 
+[Watch the Power BI walkthrough](assets/power-bi-walkthrough.mp4) (1:33, no audio). The recording shows the streaming overview, the market filter, and the 2021 artist and track momentum views.
+
 ![Power BI bar chart showing the ten largest gains in recorded chart streams from H1 to H2 2021 among the screened artists](assets/power-bi-artist-momentum.png)
 
 This chart ranks the artists in the momentum sample by absolute stream gain from H1 to H2 2021. João Gomes gained 414.1 million chart streams over that period.
@@ -21,7 +23,7 @@ This chart ranks the artists in the momentum sample by absolute stream gain from
 | Path | Contents |
 | --- | --- |
 | `sql/analysis.sql` | Eight read-only PostgreSQL queries for the rankings, over-index and momentum analysis |
-| [Case study PDF](case-study.pdf) | Findings, charts, and recommendations
+| [Case study PDF](case-study.pdf) | Findings, charts, and recommendations |
 
 The SQL expects a prepared PostgreSQL table named `charts` scoped to 2017–2021. Required fields are `date` (date or timestamp), `artist`, `title` and `region` (text), and `streams` (numeric, nullable). Run the statements in order or individually. Each query is labeled with its corresponding export. Download the source CSV from [Spotify Charts on Kaggle](https://www.kaggle.com/datasets/dhruvildave/spotify-charts), published by Dhruvil Dave.
 
