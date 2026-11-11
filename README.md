@@ -10,14 +10,20 @@ A fictional record label wants to know which markets deserve a closer look and w
 - **Geography.** Mata and sanah each over-indexed 56.9× in Poland in 2021. The index compares the artist’s share of streams from Poland with Poland’s share of all included chart streams. I paired the index with volume thresholds to surface markets worth researching for local promotion.
 - **Momentum.** João Gomes gained 414.1M recorded chart streams from H1 to H2 2021, with 60% of H2 volume across his two leading tracks. Baby Keem gained 129.0M, with 81% of H2 volume from “family ties.” I’d test a multi-track campaign for João Gomes and use Baby Keem’s breakout to introduce listeners to the rest of his catalog.
 
+## Power BI dashboard
+
+![Power BI bar chart showing the ten largest gains in recorded chart streams from H1 to H2 2021 among the screened artists](assets/power-bi-artist-momentum.png)
+
+This chart ranks the artists in the momentum sample by absolute stream gain from H1 to H2 2021. João Gomes gained 414.1 million chart streams over that period.
+
 ## Project files
 
 | Path | Contents |
 | --- | --- |
 | `sql/analysis.sql` | Eight read-only PostgreSQL queries for the rankings, over-index and momentum analysis |
-| [Case study PDF](case-study.pdf) | Findings, charts, and recommendations | Eight aggregated exports used to check the case-study figures |
+| [Case study PDF](case-study.pdf) | Findings, charts, and recommendations
 
-The SQL expects a prepared PostgreSQL table named `charts` scoped to 2017–2021. Required fields are `date` (date or timestamp), `artist`, `title` and `region` (text), and `streams` (numeric, nullable). Run the statements in order or individually. Each query is labeled with its corresponding export. The raw input and its original download URL were not included in the materials available for this release, so a full rebuild from raw records requires the original source.
+The SQL expects a prepared PostgreSQL table named `charts` scoped to 2017–2021. Required fields are `date` (date or timestamp), `artist`, `title` and `region` (text), and `streams` (numeric, nullable). Run the statements in order or individually. Each query is labeled with its corresponding export. Download the source CSV from [Spotify Charts on Kaggle](https://www.kaggle.com/datasets/dhruvildave/spotify-charts), published by Dhruvil Dave.
 
 ## Method notes
 
