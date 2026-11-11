@@ -15,7 +15,7 @@ A fictional record label wants to know which markets deserve a closer look and w
 | Path | Contents |
 | --- | --- |
 | `sql/analysis.sql` | Eight read-only PostgreSQL queries for the rankings, over-index and momentum analysis |
-| `data/` | Eight aggregated exports used to check the case-study figures |
+| [Case study PDF](case-study.pdf) | Findings, charts, and recommendations | Eight aggregated exports used to check the case-study figures |
 
 The SQL expects a prepared PostgreSQL table named `charts` scoped to 2017–2021. Required fields are `date` (date or timestamp), `artist`, `title` and `region` (text), and `streams` (numeric, nullable). Run the statements in order or individually. Each query is labeled with its corresponding export. The raw input and its original download URL were not included in the materials available for this release, so a full rebuild from raw records requires the original source.
 
