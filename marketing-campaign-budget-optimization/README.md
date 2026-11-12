@@ -45,7 +45,7 @@ The decision tool retrieves weighted KPIs for a selected promotion and recommend
 | Campaign Decision Tool | A Data Validation dropdown selects the theme. `XLOOKUP` returns its KPIs and `SUMIFS` / `COUNTIFS` return spend, revenue and record count. An `IFS` rule then recommends an action. |
 | Budget Reallocation Scenario | Editable allocation percentages, `XLOOKUP` of each theme’s historical ROAS, an allocation check, and the break-even gap. |
 
-The decision rule checks sample size first. A theme with fewer than five records returns “Promising but low-volume — test cautiously.” Otherwise the action follows media ROI: at or above 0% “Scale cautiously,” down to −10% “Prioritize & optimize,” down to −25% “Maintain & test,” and below that “Reduce or rework."
+The decision rule checks sample size first. A theme with fewer than five records returns “Promising but low-volume — test cautiously.” Otherwise the action follows media ROI: at or above 0% “Scale cautiously,” down to −10% “Prioritize & optimize,” down to −25% “Maintain & test,” and below that “Reduce or rework.”
 
 ## Data and methods
 
