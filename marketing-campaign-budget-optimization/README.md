@@ -4,7 +4,7 @@ Robyn Moore · Analytics portfolio · Excel and Tableau
 
 **Where should the next advertising dollar go?** I analyzed 190 ad-group-month observations from July through November 2021, rebuilt the campaign KPIs, and modeled a $10,000 test budget.
 
-[Read the case study](case-study.pdf) · [Excel workbook](final_shop_6modata.xlsx) · [Tableau workbook](campaign-dashboards.twbx) · [Recalculate the KPIs](verify_metrics.py) · [Portfolio home](../)
+[Read the case study](case-study.pdf) · [Live Tableau dashboard](https://public.tableau.com/views/Project3_17945046257210/BudgetOptimization?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) · [Excel workbook](final_shop_6modata.xlsx) · [Tableau workbook](campaign-dashboards.twbx) · [Recalculate the KPIs](verify_metrics.py) · [Portfolio home](../)
 
 ## What I found
 
@@ -22,6 +22,8 @@ Robyn Moore · Analytics portfolio · Excel and Tableau
 - **The proposed mix still needs improvement.** Allocate $4,000 to Promo Code, $3,000 to Promo, $2,000 to Coupon Code and retain $1,000. Applying historical ROAS to the $9,000 deployed gives $8,267.03 in modeled revenue. Covering media spend requires $732.97 more, an 8.87% lift over modeled revenue.
 
 ## Tableau dashboard
+
+[Open the interactive dashboard on Tableau Public](https://public.tableau.com/views/Project3_17945046257210/BudgetOptimization?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link). It has three views: executive performance, campaign strategy and budget optimization.
 
 ![Executive Tableau dashboard showing overall KPIs, monthly conversions, spend, revenue and ROI](tableau-overview.jpg)
 
