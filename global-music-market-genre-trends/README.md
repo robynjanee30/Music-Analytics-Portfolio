@@ -23,6 +23,8 @@ These examples balance genre demand with similarity across the full 17-genre pro
 - **Local momentum can diverge from the wider trend.** Hip-Hop / Rap gained 32.68 percentage points in Greece, while its unweighted average share fell 3.11 points across the 52 markets with all 48 months present from 2018 to 2021.
 - **The five clusters give campaign teams more detail.** The two-cluster solution scored highest on silhouette (0.530). I selected five clusters (0.521) for finer profiles and treated the Brazil-only cluster as an outlier.
 
+![Change in average genre share across 52 markets from 2018 to 2021](genre-momentum.png)
+
 ## Data and verification
 
 The source is [MGD+ on Zenodo](https://zenodo.org/records/8086643) by Danilo B. Seufitelli, Gabriel P. Oliveira, Mariana O. Silva, and Mirella M. Moro. The archive here contains ten aggregate result tables, including the monthly market-and-genre input, the original quality summary, market profiles, and UK shortlists.

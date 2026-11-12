@@ -5,7 +5,7 @@ Five case studies on streaming performance, fan behavior, marketing spend, inter
 | Project | Question | Tools |
 | --- | --- | --- |
 | [1. Spotify Streaming Analytics](#project-1-spotify-streaming-analytics) | Where are artists gaining momentum, and what could explain it? | PostgreSQL, Power BI |
-| [2. Audience Segmentation & Fan Strategy](audience-segmentation-fan-strategy/) | Which listeners are more likely to explore new artists? | Python, scikit-learn |
+| [2. Audience Segmentation & Fan Strategy](audience-segmentation-fan-strategy/) | How do listening intensity and artist breadth vary across fan segments? | Python, scikit-learn |
 | [3. Marketing Campaign Performance & Budget Optimization](marketing-campaign-budget-optimization/) | Where should the next ad dollar go? | Excel, Tableau |
 | [4. Global Music Market & Genre Trends](global-music-market-genre-trends/) | Where could a UK artist test an international release? | Python, scikit-learn |
 | [5. Billboard Hit Classification](billboard-hit-classification/) | How well do audio features distinguish historical Billboard hits? | Python, scikit-learn |
@@ -24,6 +24,8 @@ A fictional record label wants to know which markets deserve a closer look and w
 
 [Watch the Power BI walkthrough](assets/power-bi-walkthrough.mp4) (1:33, no audio). The recording shows the streaming overview, the market filter, and the 2021 artist and track momentum views.
 
+[![Animated Power BI preview showing the market filter switch from the UK to the US](assets/power-bi-market-filter.gif)](assets/power-bi-walkthrough.mp4)
+
 ![Power BI bar chart showing the ten largest gains in recorded chart streams from H1 to H2 2021 among the screened artists](assets/power-bi-artist-momentum.png)
 
 This chart ranks the artists in the momentum sample by absolute stream gain from H1 to H2 2021. João Gomes gained 414.1 million chart streams over that period.
@@ -41,6 +43,6 @@ The SQL expects a prepared PostgreSQL table named `charts` scoped to 2017–2021
 
 The analysis excludes missing stream counts and the aggregate Global chart. The 2021 comparisons also exclude South Korea because its chart series began partway through the year. Artist credits stay as written, so collaborative credits are grouped separately. The two case-study track queries consolidate title capitalization variants.
 
-Market over-index uses the artist’s share of streams from a market divided by the market’s share of all included streams. The screen requires 100M streams for the artist credit and 10M for the artist-market pair. The momentum sample requires at least 1M H1 streams, 10M H2 streams and a gain of 100M, then keeps up to 20 credits ranked by percentage growth.
+Market over-index uses the artist’s share of streams from a market divided by the market’s share of all included streams. The index is capped at the inverse of the market’s share of all included chart streams. Mata and sanah both reached Poland’s 56.9× ceiling because their included chart streams were all in Poland. Read the index alongside absolute volume and market share. The screen requires 100M streams for the artist credit and 10M for the artist-market pair. The momentum sample requires at least 1M H1 streams, 10M H2 streams and a gain of 100M, then keeps up to 20 credits ranked by percentage growth.
 
 Chart streams capture charting activity. Market coverage changed over time, and these historical results do not establish what caused the growth.

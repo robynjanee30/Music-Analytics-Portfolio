@@ -24,6 +24,8 @@ Robyn Moore · Analytics portfolio · Excel and Tableau
 
 ![Executive Tableau dashboard showing overall KPIs, monthly conversions, spend, revenue and ROI](tableau-overview.jpg)
 
+The original Tableau labels “P&L” and “profitable” refer to tracked revenue less ad spend and media break-even. They exclude product margins and other operating costs.
+
 [Campaign strategy view](tableau-campaign-strategy.jpg) · [Budget optimization view](tableau-budget-optimization.jpg)
 
 ## Excel decision support

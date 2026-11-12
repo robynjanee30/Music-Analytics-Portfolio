@@ -1,9 +1,9 @@
 -- Spotify Charts, 2017–2021 | Robyn Moore
 -- PostgreSQL. Input is the prepared charts table for the study period.
 -- Required columns are date, artist, title, region, and streams.
--- Each query corresponds to one supplied aggregate CSV.
+-- Each query returns one named result set for the dashboard analysis.
 
--- data/top_artists.csv
+-- Result set: top_artists
 SELECT
     artist,
     SUM(streams) AS total_streams
@@ -14,7 +14,7 @@ GROUP BY artist
 ORDER BY total_streams DESC
 LIMIT 10;
 
--- data/top_tracks.csv
+-- Result set: top_tracks
 SELECT
     artist,
     title,
@@ -26,7 +26,7 @@ GROUP BY artist, title
 ORDER BY total_streams DESC
 LIMIT 10;
 
--- data/ed_sheeran_yearly.csv
+-- Result set: ed_sheeran_yearly
 SELECT
     EXTRACT(YEAR FROM date) AS year,
     SUM(streams) AS total_streams
@@ -37,7 +37,7 @@ WHERE streams IS NOT NULL
 GROUP BY year
 ORDER BY year ASC;
 
--- data/top_markets.csv
+-- Result set: top_markets
 SELECT
     region,
     SUM(streams) AS total_streams
@@ -48,7 +48,7 @@ GROUP BY region
 ORDER BY total_streams DESC
 LIMIT 10;
 
--- data/artist_market_overindex.csv
+-- Result set: artist_market_overindex
 WITH Artist_Region AS (
     SELECT
         artist,
@@ -119,7 +119,7 @@ WHERE Artist_Total_Streams >= 100000000
     AND Artist_Region_Streams >= 10000000
 ORDER BY Over_Index DESC;
 
--- data/artist_momentum_2021.csv
+-- Result set: artist_momentum_2021
 WITH Half_Year_Streams AS (
     SELECT
         artist,
@@ -146,7 +146,7 @@ WHERE H1_Streams >= 1000000
 ORDER BY Growth_Percent DESC
 LIMIT 20;
 
--- data/joao_gomes_track_momentum.csv
+-- Result set: joao_gomes_track_momentum
 SELECT
     INITCAP(LOWER(title)) AS title,
     SUM(CASE 
@@ -166,7 +166,7 @@ WHERE streams IS NOT NULL
 GROUP BY LOWER(title)
 ORDER BY H2_Streams DESC;
 
--- data/baby_keem_track_momentum.csv
+-- Result set: baby_keem_track_momentum
 SELECT
     INITCAP(LOWER(title)) AS title,
     SUM(CASE 

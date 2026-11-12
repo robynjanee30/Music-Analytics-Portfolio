@@ -18,6 +18,8 @@ Robyn Moore · Music analytics portfolio · Python, pandas, scikit-learn
 
 The forest found **557 of 792 labelled hits** and flagged **699 non-hits**. Audio descriptors provided a modest historical ranking signal, with enough false positives to make an automatic shortlist impractical on its own.
 
+![Confusion matrix showing 922 true negatives, 699 false positives, 235 false negatives, and 557 true positives](test-confusion-matrix.png)
+
 ## How I tested it
 
 - Joined the HSP-S audio and release-year files by UUID. Of 7,736 audio records, 7,281 entered the model after filtering to known release years from 1960 to 2009.

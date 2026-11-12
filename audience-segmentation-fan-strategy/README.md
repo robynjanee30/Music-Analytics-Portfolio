@@ -22,6 +22,10 @@ Artist breadth divides the number of distinct artist names across a listener’s
 
 **Reach and affinity tell different stories.** Radiohead reached 693 listeners and indexed at 1.15×. Beach House reached 19.28% of Exploratory Power Listeners and 3.96% of Focused Listeners, an index of 4.86×. Flying Lotus indexed at 7.37×, with 14.62% penetration in the Exploratory Power segment.
 
+![Artist reach by segment for Beach House, Flying Lotus and Modeselektor](artist-affinity.png)
+
+**Interpretation.** Artist breadth was normalized by time. Plays and breadth increased by similar multiples across segments, so these averages do not establish greater exploration per play. A high-volume listener also has more chances to play any given artist at least once. The affinity ratios are descriptive. I’d compare listeners at similar play volumes or test breadth per play before interpreting them as preference differences.
+
 ## What I’d test
 
 - **Discovery for Exploratory Power Listeners.** Test an adjacent-artist recommendation seeded by a high-affinity artist. Measure first-time artist listens and repeat listening against a holdout.
