@@ -27,9 +27,11 @@ This chart ranks the artists in the momentum sample by absolute stream gain from
 | Path | Contents |
 | --- | --- |
 | [PostgreSQL queries](sql/analysis.sql) | Eight read-only PostgreSQL queries for the rankings, over-index and momentum analysis |
+| [Query exports](data/) | The eight CSV results the queries returned, which feed the dashboard and the figures above |
+| [Power BI report](spotify-streaming-dashboard.pbix) | Three pages: Performance Overview, Market Strategy, and Momentum & Growth |
 | [Case study PDF](case-study.pdf) | Findings, charts, and recommendations |
 
-The SQL expects a prepared PostgreSQL table named `charts` scoped to 2017–2021. Required fields are `date` (date or timestamp), `artist`, `title` and `region` (text), and `streams` (numeric, nullable). Run the statements in order or individually. Each query is labeled with its corresponding export. Download the source CSV from [Spotify Charts on Kaggle](https://www.kaggle.com/datasets/dhruvildave/spotify-charts), published by Dhruvil Dave.
+The SQL expects a prepared PostgreSQL table named `charts` scoped to 2017–2021. Required fields are `date` (date or timestamp), `artist`, `title` and `region` (text), and `streams` (numeric, nullable). Run the statements in order or individually. Each query is labeled with the export it produced in [data/](data/). Download the source CSV from [Spotify Charts on Kaggle](https://www.kaggle.com/datasets/dhruvildave/spotify-charts), published by Dhruvil Dave.
 
 ## Method notes
 
