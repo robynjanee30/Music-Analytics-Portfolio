@@ -1,0 +1,11 @@
+# macOS and Office clutter
+.DS_Store
+~$*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Source datasets are downloaded separately (see each project README)
+*.parquet
+*.tsv.zip
+hsp-s_uuid_year.csv
