@@ -18,7 +18,7 @@ The original full-cohort analysis parsed **19,098,853 events across 992 users**.
 | Share of plays for top artist | 8.67% | 5.92% |
 | Active-day rate | 28.22% | 71.36% |
 
-Artist breadth divides the number of distinct artist names across a listener’s history by their observation days. The Exploratory Power segment logged about 4.4× more plays per day and spread its listening more widely.
+Artist breadth divides the number of distinct artist names across a listener’s history by their observation days. The Exploratory Power segment logged about 4.4× more plays per day and about four times the artist breadth per day.
 
 **Reach and affinity tell different stories.** Radiohead reached 693 listeners and indexed at 1.15×. Beach House reached 19.28% of Exploratory Power Listeners and 3.96% of Focused Listeners, an index of 4.86×. Flying Lotus indexed at 7.37×, with 14.62% penetration in the Exploratory Power segment.
 
@@ -26,7 +26,18 @@ Artist breadth divides the number of distinct artist names across a listener’s
 
 Radiohead shows broad reach in both segments. Beach House, Flying Lotus and Modeselektor (3.5% of Focused and 17.4% of Exploratory Power Listeners) reach far fewer listeners overall and are concentrated in the higher-volume segment.
 
-**Interpretation.** “Exploratory Power” is a label for the higher-volume cluster with wider daily artist breadth. It does not show a stronger appetite for discovery. Artist breadth was normalized by time. Plays and breadth increased by similar multiples across segments, so these averages do not establish greater exploration per play. A high-volume listener also has more chances to play any given artist at least once. The affinity ratios are descriptive. I’d compare listeners at similar play volumes or test breadth per play before interpreting them as preference differences.
+**Is the higher-volume segment really more exploratory?** Distinct artists grow more slowly than plays, so I compared listeners at similar play volumes.
+
+| Total plays | Median artists, Focused | Median artists, Exploratory Power | Ratio |
+| --- | ---: | ---: | ---: |
+| 2,000–4,999 | 329 | 480 | 1.46× |
+| 5,000–9,999 | 554 | 698 | 1.26× |
+| 10,000–19,999 | 583 | 929 | 1.59× |
+| 20,000–39,999 | 628 | 1,153 | 1.84× |
+
+Across the cohort, Exploratory Power Listeners heard about 1.38× as many distinct artists at equal play volume (95% CI 1.24–1.53). Artist breadth per day was a clustering input, so part of that gap follows from how the segments were formed. The notebook shows all six bands and the regression.
+
+**What the affinity ratios can support.** A high-volume listener has more chances to play any given artist at least once, so the reach-based over-index values are descriptive. They do not isolate artist preference from listening volume.
 
 ## What I’d test
 
