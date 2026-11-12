@@ -4,7 +4,7 @@ Five case studies on streaming performance, fan behavior, marketing spend, inter
 
 **Tools:** SQL (PostgreSQL) · Python (pandas, scikit-learn) · Power BI · Tableau · Excel
 
-**Contact:** [GitHub profile](https://github.com/robynjanee30)
+**Contact:** [LinkedIn](https://www.linkedin.com/in/robyn-j-moore/) · [GitHub profile](https://github.com/robynjanee30)
 
 | Project | Question | Headline finding | Tools |
 | --- | --- | --- | --- |
