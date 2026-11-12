@@ -6,6 +6,8 @@ A fictional record label wants to know which markets deserve a closer look and w
 
 [Project 2: Audience Segmentation & Fan Strategy](audience-segmentation-fan-strategy/)
 
+[Project 3: Marketing Campaign Performance & Budget Optimization](marketing-campaign-budget-optimization/)
+
 ## What I found
 
 - **Scale.** Ed Sheeran led artist credits with 10.52B recorded chart streams. The Weeknd’s “Blinding Lights” led tracks at 2.56B. The United States led markets at 142.13B.
