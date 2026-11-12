@@ -10,6 +10,8 @@ A fictional record label wants to know which markets deserve a closer look and w
 
 [Project 4: Global Music Market & Genre Trends](global-music-market-genre-trends/)
 
+[Project 5: Can audio features identify Billboard hits?](billboard-hit-classification/)
+
 ## What I found
 
 - **Scale.** Ed Sheeran led artist credits with 10.52B recorded chart streams. The Weeknd’s “Blinding Lights” led tracks at 2.56B. The United States led markets at 142.13B.
