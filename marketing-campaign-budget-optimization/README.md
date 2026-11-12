@@ -4,7 +4,7 @@ Robyn Moore · Analytics portfolio · Excel and Tableau
 
 **Where should the next advertising dollar go?** I analyzed 190 ad-group-month observations from July through November 2021, rebuilt the campaign KPIs, and modeled a $10,000 test budget.
 
-[Read the case study](case-study.pdf) · [Excel workbook](final_shop_6modata.xlsx) · [Tableau workbook](campaign-dashboards.twb) · [Recalculate the KPIs](verify_metrics.py) · [Portfolio home](../)
+[Read the case study](case-study.pdf) · [Excel workbook](final_shop_6modata.xlsx) · [Tableau workbook](campaign-dashboards.twbx) · [Recalculate the KPIs](verify_metrics.py) · [Portfolio home](../)
 
 ## What I found
 
@@ -33,7 +33,7 @@ The original Tableau labels “P&L” and “profitable” refer to tracked reve
 
 [Campaign decision tool](excel-decision-tool.jpg) · [Budget reallocation scenario](excel-budget-scenario.jpg)
 
-The decision tool retrieves weighted KPIs for a selected promotion and recommends an action based on performance and scale. The scenario applies historical theme ROAS to an editable allocation. The links above are screenshots. The [Excel workbook](final_shop_6modata.xlsx) and [Tableau workbook](campaign-dashboards.twb) are included. Keep the two files in the same folder so Tableau can find its Excel data source.
+The decision tool retrieves weighted KPIs for a selected promotion and recommends an action based on performance and scale. The scenario applies historical theme ROAS to an editable allocation. The links above are screenshots. The [Excel workbook](final_shop_6modata.xlsx) and [Tableau workbook](campaign-dashboards.twbx) are included. The Tableau file is a packaged workbook with its data source bundled.
 
 ### How the workbook is built
 
