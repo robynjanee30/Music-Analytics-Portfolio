@@ -4,6 +4,8 @@ Robyn Moore · Music analytics portfolio · Spotify Charts, 2017–2021
 
 A fictional record label wants to know which markets deserve a closer look and what drives an artist’s streaming gains. I used PostgreSQL and DBeaver to analyze historical Spotify Charts records and Power BI to build a dashboard.
 
+[Project 2: Audience Segmentation & Fan Strategy](audience-segmentation-fan-strategy/)
+
 ## What I found
 
 - **Scale.** Ed Sheeran led artist credits with 10.52B recorded chart streams. The Weeknd’s “Blinding Lights” led tracks at 2.56B. The United States led markets at 142.13B.
