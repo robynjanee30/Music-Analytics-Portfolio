@@ -52,6 +52,6 @@ I standardized four behavioral features and compared K-Means solutions from k=2 
 
 1. Download the full `userid-timestamp-artid-artname-traid-traname.tsv.zip` from the [Last.fm 1K data release](https://github.com/eifuentes/lastfm-dataset-1K/releases) and place it beside the notebook.
 2. Install the dependencies with `python -m pip install -r requirements.txt`, then open `audience-segmentation.ipynb` in JupyterLab and run all cells. The code reads the event archive in chunks.
-3. The notebook is published without saved cell outputs and records the original aggregate results as notes under each step. The full archive is required to reproduce the historical figures. A 50-user Parquet subset from the same release was used for exploration only. Raw histories and demographics are omitted from this repository.
+3. The notebook includes saved outputs from a full run in Google Colab on 17 November 2026, which reproduced every figure on this page. The full archive is required to rerun it. A 50-user Parquet subset from the same release was used for exploration only. Raw histories and demographics are omitted from this repository.
 
 Source: Òscar Celma’s Last.fm 1K user dataset, released via the mirror linked above.
